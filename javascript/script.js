@@ -29,31 +29,31 @@ function homePage() {
     location.href = "../index.html";
   }
 }
-function contentPage() {
-  if (location == "html/content.html") {
+function contactPage() {
+  if (location == "html/contact-us.html") {
     location.href = "#";
   } else {
-    location.href = "../html/content.html";
+    location.href = "../html/contact-us.html";
   }
 }
-function webFormPage() {
-  if (location == "html/web-form.html") {
+function bookingPage() {
+  if (location == "html/booking.html") {
     location.href = "#";
   } else {
-    location.href = "../html/web-form.html";
+    location.href = "../html/booking.html";
   }
 }
-function tableOfDataPage() {
-  if (location == "html/table-of-data.html") {
+function servicesPage() {
+  if (location == "html/services.html") {
     location.href = "#";
   } else {
-    location.href = "../html/table-of-data.html";
+    location.href = "../html/services.html";
   }
 }
-function blogPage() {
-  if (location == "html/blog-page.html") {
+function aboutPage() {
+  if (location == "html/about-us.html") {
     location.href = "#";
   } else {
-    location.href = "../html/blog-page.html";
+    location.href = "../html/about-us.html";
   }
 }
