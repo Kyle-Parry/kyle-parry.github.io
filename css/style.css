@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+}
+main {
+    background-color: rgba(46, 235, 209, 0.1);
+}
+header {
+    margin: auto;
+    height: 100px;
+    width: 100%;
+    background-image: url('https://picsum.photos/2000/100');
+}
