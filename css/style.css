@@ -9,12 +9,13 @@ body {
 h1 {
     font-size: 34pt;
 }
-p {
-    font-size: 16pt;
-}
 h2 {
     font-size: 24pt;
 }
+p {
+    font-size: 16pt;
+}
+
 
 
 
@@ -23,7 +24,9 @@ section {
     margin: auto;
     width: 80%;
     background-color: gray;
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 header {
     margin: auto;
@@ -46,16 +49,42 @@ section>h1 {
     padding: 30px;
 }
 
-#brands {
+#business {
     margin: auto;
+    width: 80%;
     display: flex;
     align-items: center;
     padding: 50px;
     flex-direction: column;
 }
-figure {
-    height: 700px;
-    width: 700px;
-    background-color: aqua;
-
+#home-imgs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+#home-imgs>img {
+    padding: 10px;
+}
+#contact-form {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+#contact-form>div{
+    padding-bottom: 20px;
+}
+#contact-message {
+    resize: none;
+    height: 10em;
+    width: 400px;
+}
+#contact-form>div>input {
+    width: 200px;
+}
+#contact-discription {
+    width: 70%;
+    padding-left: 60px;
 }
