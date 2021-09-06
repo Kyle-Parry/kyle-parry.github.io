@@ -4,8 +4,11 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: lightgray;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -29,7 +32,8 @@ footer>p {
 section {
     padding: 0;
     margin: auto;
-    width: 80%;
+    width: 70%;
+    height: 800px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -37,9 +41,9 @@ section {
 
 header {
     margin: auto;
-    height: 100px;
+    height: 150px;
     width: 100%;
-    background-image: url('https://picsum.photos/2000/100');
+    background-image: url('https://picsum.photos/2000/150');
 }
 
 nav {
@@ -81,7 +85,6 @@ section>h1 {
     padding: 10px;
 }
 
-
 #contact-form {
     margin: auto;
     display: flex;
@@ -115,4 +118,14 @@ section>h1 {
     width: 300px;
     height: 300px;
     overflow: hidden;
+}
+
+#service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#service-list>ul {
+    width: 20%;
+    padding: 50px;
 }
