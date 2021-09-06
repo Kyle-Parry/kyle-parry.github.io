@@ -33,7 +33,7 @@ section {
     padding: 0;
     margin: auto;
     width: 70%;
-    height: 800px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
