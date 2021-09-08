@@ -2,7 +2,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
 }
-
 body {
     min-height: 100vh;
     background-color: lightgray;
@@ -10,49 +9,41 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 h1 {
     font-size: 34pt;
 }
-
 h2 {
     font-size: 24pt;
 }
-
 p {
     font-size: 16pt;
 }
-
 footer>p {
     font-size: 12pt;
 }
 
-
-
+/* main parts of the document */
 section {
     padding: 0;
     margin: auto;
     width: 70%;
-    min-height: 800px;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-
 header {
     margin: auto;
     height: 150px;
     width: 100%;
     background-image: url('https://picsum.photos/2000/150');
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     height: 50px;
     background-color: bisque;
 }
-
 footer {
     padding: 10px;
     background-color: blanchedalmond;
@@ -60,11 +51,11 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 section>h1 {
     padding: 30px;
 }
 
+/* home page */
 #business {
     margin: auto;
     width: 80%;
@@ -73,18 +64,17 @@ section>h1 {
     padding: 50px;
     flex-direction: column;
 }
-
 #home-imgs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 50px;
 }
-
 #home-imgs>img {
     padding: 10px;
 }
 
+/* contact us page */
 #contact-form {
     margin: auto;
     display: flex;
@@ -92,27 +82,24 @@ section>h1 {
     flex-direction: column;
     padding-bottom: 40px;
 }
-
 #contact-form>div {
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
-
 #contact-message {
     resize: none;
     height: 10em;
     width: 400px;
 }
-
 #contact-form>div>input {
     width: 200px;
 }
-
 #contact-description,
 #contact-info {
     width: 70%;
     margin: auto;
 }
-
 #map-location {
     margin: auto;
     width: 300px;
@@ -120,6 +107,7 @@ section>h1 {
     overflow: hidden;
 }
 
+/* services page */
 #service-list {
     display: flex;
     flex-wrap: wrap;
@@ -128,4 +116,41 @@ section>h1 {
 #service-list>ul {
     width: 20%;
     padding: 50px;
+}
+
+/* booking page */
+#booking-form {
+    width: 400px;
+    margin: auto;
+    padding-bottom: 40px;
+}
+#booking-form>div {
+    display: flex;
+    flex-direction: column;
+}
+#booking-form>div>input,select,label{
+    padding: 10px;
+}
+#buttons {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div>button {
+    width: 80px;
+    padding: 10px;
+}
+
+/* about us page */
+#about>article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#about>article>p {
+    width: 70%;
 }
