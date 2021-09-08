@@ -57,3 +57,4 @@ function aboutPage() {
     location.href = "../html/about-us.html";
   }
 }
+
