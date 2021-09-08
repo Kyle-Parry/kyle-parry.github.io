@@ -76,7 +76,6 @@ section>h1 {
 
 /* contact us page */
 #contact-form {
-    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -153,4 +152,42 @@ div>button {
 }
 #about>article>p {
     width: 70%;
+}
+
+/* phone view */
+@media screen and (max-width: 400px) {
+    
+/* main parts of the document */
+    section {
+        width: 100%;
+    }
+    section>h1 {
+        padding: 0px;
+    }
+
+    #business {
+        width: 95%;
+        padding: 0;
+    }
+
+    #booking-form {
+        width: 95%;
+    }
+
+    #service-list>ul {
+        width: 100%;
+    }
+    
+    #contact-message {
+        width: 95%;
+    }
+
+    #about>article {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #about>article>p{
+        width: 95%;
+    }
 }
