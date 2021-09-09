@@ -3,6 +3,7 @@
     color: black;
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
     background-color: lightgray;
@@ -10,35 +11,41 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 h1 {
     font-size: 34pt;
 }
+
 h2 {
     font-size: 24pt;
 }
+
 h3 {
     font-size: 20pt;
 }
+
 p {
     font-size: 16pt;
 }
-figcaption{
+
+figcaption {
     font-size: 12pt;
 }
+
 footer>p {
     font-size: 12pt;
 }
-a {
+
+.nav>a {
+    font-size: 20pt;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    color: #1E1E23;
-    opacity:1;
-    font-size: 1.5em;
-    font-weight: 400;
-    transition: 200ms;
-  }
-  a:hover {
-    opacity:0.5;
-  }
+	transition: color ease 0.8s;
+}
+
+.nav>a:hover {
+    color: white;
+}
 
 /* main parts of the document */
 section {
@@ -50,31 +57,37 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 header {
     margin: auto;
     min-height: 150px;
     width: 100%;
     /* background-image: url('https://picsum.photos/2000/150'); */
 }
-#burger{
+
+#burger {
     display: none;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     height: 50px;
-    background-color: bisque;
+    background-color: rgb(163, 163, 163);
 }
+
 footer {
     padding: 10px;
-    background-color: blanchedalmond;
+    background-color: rgb(163, 163, 163);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 section>h1 {
     padding: 30px;
 }
+
 .burger {
     display: none;
 }
@@ -88,12 +101,14 @@ section>h1 {
     padding: 50px;
     flex-direction: column;
 }
+
 #home-imgs {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 50px;
 }
+
 #home-imgs>img {
     padding: 10px;
 }
@@ -105,24 +120,29 @@ section>h1 {
     flex-direction: column;
     padding-bottom: 40px;
 }
+
 #contact-form>div {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
+
 #contact-message {
     resize: none;
     height: 10em;
     width: 400px;
 }
+
 #contact-form>div>input {
     width: 200px;
 }
+
 #contact-description,
 #contact-info {
     width: 70%;
     margin: auto;
 }
+
 #map-location {
     margin: auto;
     width: 300px;
@@ -136,6 +156,7 @@ section>h1 {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 #service-list>ul {
     width: 20%;
     padding: 50px;
@@ -147,13 +168,18 @@ section>h1 {
     margin: auto;
     padding-bottom: 40px;
 }
+
 #booking-form>div {
     display: flex;
     flex-direction: column;
 }
-#booking-form>div>input,select,label{
+
+#booking-form>div>input,
+select,
+label {
     padding: 10px;
 }
+
 #buttons {
     margin: auto;
     width: 50%;
@@ -162,6 +188,7 @@ section>h1 {
     flex-direction: row;
     justify-content: space-around;
 }
+
 div>button {
     width: 80px;
     padding: 10px;
@@ -174,17 +201,19 @@ div>button {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 #about>article>p {
     width: 70%;
 }
 
 /* phone view */
 @media screen and (max-width: 400px) {
-    
-/* main parts of the document */
+
+    /* main parts of the document */
     section {
         width: 100%;
     }
+
     section>h1 {
         padding: 0px;
     }
@@ -201,7 +230,7 @@ div>button {
     #service-list>ul {
         width: 100%;
     }
-    
+
     #contact-message {
         width: 95%;
     }
@@ -211,28 +240,46 @@ div>button {
         flex-direction: column;
         align-content: center;
     }
-    #about>article>p{
+
+    #about>article>p {
         width: 95%;
     }
-    
+
     #burger-icon {
         font-size: 30pt;
     }
+
     .header {
-        background-color: aqua;
+        background-color: rgb(29, 109, 163);
         min-height: 50px;
     }
-     #burger {
+
+    #burger {
         display: flex;
         flex-direction: column;
-    } 
+    }
 
     #nav-links {
         list-style: none;
         margin: 0;
         padding: 0;
-
+        width: 100%;
     }
+
+    #nav-links>li {
+        margin-bottom: 5px;
+        padding: 2px;
+        
+        border: solid black;
+        text-align: center;
+    }
+
+    #nav-links>li>a {
+        font-size: 16pt;
+        color: black;
+        text-decoration: none;
+    }
+
     #burger-links {
         display: flex;
         justify-content: center;
@@ -241,17 +288,19 @@ div>button {
         opacity: 0;
         transition: all 0.5s, opacity 0.2s linear;
     }
-    #toggle:checked ~ #burger-links {
+
+    #toggle:checked~#burger-links {
         display: flex;
         justify-content: center;
         visibility: visible;
         opacity: 1;
-        height: 150px;
+        height: 200px;
     }
+
     .nav {
         display: none;
     }
 
-      
+
 
 }
