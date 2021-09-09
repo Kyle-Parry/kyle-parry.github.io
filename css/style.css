@@ -254,8 +254,10 @@ div>button {
     }
 
     .header {
+        background-image: none;
         background-color: rgb(29, 109, 163);
         min-height: 50px;
+        filter: none;
     }
 
     #burger {
