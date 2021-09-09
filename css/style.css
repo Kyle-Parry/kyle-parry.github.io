@@ -10,6 +10,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    
 }
 
 h1 {
@@ -56,28 +57,32 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 header {
-    min-height: 150px;
-    width: 100%;
-    background-image: url(../images/banner.jpg);
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 200px;
+    width: auto;
     filter: grayscale(50%);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+
 
 #burger {
     display: none;
 }
 
 nav {
+    margin: 0%;
+    padding: 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
     height: 50px;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(163, 163, 163); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 footer {
@@ -162,7 +167,7 @@ section>h1 {
 }
 
 #service-list>ul {
-    width: 20%;
+    width: 300px;
     padding: 50px;
 }
 
@@ -212,6 +217,9 @@ div>button {
 
 /* phone view */
 @media screen and (max-width: 400px) {
+    #banner {
+        display: none;
+    }
 
     /* main parts of the document */
     section {
@@ -255,7 +263,7 @@ div>button {
 
     .header {
         background-image: none;
-        background-color: rgb(29, 109, 163);
+        background-color: rgb(163, 163, 163);
         min-height: 50px;
         filter: none;
     }
