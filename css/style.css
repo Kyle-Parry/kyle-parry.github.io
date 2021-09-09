@@ -265,7 +265,10 @@ div>button {
         background-image: none;
         background-color: rgb(163, 163, 163);
         min-height: 50px;
+        height: auto;
+        width: 100%;
         filter: none;
+        background-size: auto;
     }
 
     #burger {
