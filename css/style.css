@@ -59,10 +59,14 @@ section {
 }
 
 header {
-    margin: auto;
     min-height: 150px;
     width: 100%;
-    /* background-image: url('https://picsum.photos/2000/150'); */
+    background-image: url(../images/banner.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: hue-rotate(60deg);
 }
 
 #burger {
