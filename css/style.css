@@ -122,6 +122,13 @@ section>h1 {
     padding: 10px;
 }
 
+.glasses-imgs {
+        object-fit: cover;
+        object-position: center;
+        height: 200px;
+        width: 200px;
+}
+
 /* contact us page */
 #contact-form {
     display: flex;
