@@ -194,6 +194,11 @@ section>h1 {
 select,
 label {
     padding: 10px;
+    
+}
+
+input:focus {
+    background-color: lightblue;
 }
 
 #buttons {
